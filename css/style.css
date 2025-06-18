@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*LAYOUT*/
+header {
+  height: 100px;
+  background-color: blue;
+}
+
+footer {
+  height: 100px;
+  background-color: blueviolet;
+}
+
+main {
+  height: calc(100vh - 200px);
+  background-color: goldenrod;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100%;
+  background-color: silver;
+}
+
+/*content header*/
+.row {
+  display: flex;
+}
+
+.space {
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 40px;
+}
