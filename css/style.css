@@ -146,6 +146,7 @@ row{
 
 .content {
   width: calc(100vw - 300px);
+  overflow-y: auto;
 }
 
 .recently {
@@ -196,11 +197,15 @@ row{
   margin-bottom: 15px;
 }
 
+.my {
+  margin-top: 50px;
+}
+
 .recently-played,
 .creato,
-.artisti {
-  margin-top: 20px;
-  margin-left: 40px;
+{
+margin-top: 20px;
+margin-left: 40px;
 }
 
 .bg-pink {
