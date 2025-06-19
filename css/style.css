@@ -19,6 +19,7 @@ footer {
 main {
   height: calc(100vh - 200px);
   background-color: #141922;
+  display: flex;
 }
 
 .sidebar {
@@ -136,4 +137,67 @@ hr {
 
 .icon-profile {
   width: 20px;
+}
+
+/*content main
+row{
+  display: flex;
+}*/
+
+.content {
+  width: calc(100vw - 300px);
+}
+
+.row-ul {
+  justify-content: center;
+}
+
+.voci {
+  margin-right: 10px;
+  color: white;
+}
+
+.voci ul {
+  list-style-type: none;
+  display: flex;
+  margin-top: 20px;
+}
+
+.voci li {
+  margin-right: 15px;
+}
+
+.col-16 {
+  width: 200px;
+  height: 200px;
+  gap: 20px;
+}
+
+.col-100 {
+  width: 100%;
+}
+
+.recently-played,
+.creato,
+.artisti {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.bg-pink {
+  background-color: pink;
+}
+
+.metal {
+  width: 200px;
+  height: 200px;
+}
+
+h3,
+h2 {
+  color: white;
+}
+
+p {
+  color: gray;
 }
