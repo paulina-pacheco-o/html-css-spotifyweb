@@ -149,7 +149,7 @@ row{
 
 .content {
   width: calc(100vw - 300px);
-  /*overflow-y: auto;*/
+  overflow-y: auto;
 }
 
 .recently {
@@ -310,6 +310,7 @@ span {
 .icons-footer {
   display: flex;
   color: white;
+  gap: 5px;
 }
 
 .heart {
@@ -347,12 +348,28 @@ span {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 45px;
+  align-items: flex-end;
+  font-size: 30px;
   margin-top: 10px;
 }
 
 .icons-player {
   color: white;
   display: flex;
+}
+
+.player-bar-sm {
+  width: 30%;
+  background-color: grey;
+  height: 5px;
+  border-radius: 5px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.last-section {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
