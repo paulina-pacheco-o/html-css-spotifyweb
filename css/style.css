@@ -18,7 +18,7 @@ footer {
 }
 
 main {
-  height: calc(100vh - 200px);
+  height: calc(100vh - 100px);
   background-color: #141922;
   display: flex;
   overflow-y: auto;
@@ -77,9 +77,17 @@ body {
   padding-top: 15px;
 }
 
+.before li:first-child::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 35px;
+  background-color: #BBFF30;
+}
+
 .icon-list ul {
   list-style-type: none;
-  color: white;
+  color: grey;
 }
 
 .icon-list img {
@@ -99,6 +107,12 @@ body {
 .playlist h4 {
   color: white;
   margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.playlist li:hover,
+.before li:hover {
+  color: white;
 }
 
 .playlist ul {
@@ -168,7 +182,7 @@ row{
 
 .voci {
   margin-right: 10px;
-  color: white;
+  color: gray;
 }
 
 .voci ul {
@@ -179,6 +193,16 @@ row{
   gap: 30px;
 }
 
+.voci li:first-child::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #BBFF30;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
 .voci li {
   margin-right: 15px;
 }
@@ -187,9 +211,25 @@ row{
 .col-20 {
   margin-left: 20px;
   width: calc(100% / 6 - 20px);
-  height: 150px;
   margin-bottom: 45px;
   gap: 20px;
+}
+
+/*.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+}*/
+
+.overlay img {
+  opacity: 1;
 }
 
 .col-16 img {
@@ -223,12 +263,10 @@ margin-left: 40px;
 }*/
 
 .create {
-  margin-top: 120px;
   padding: 10px;
 }
 
 .artisti {
-  margin-top: 50px;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -272,12 +310,10 @@ span {
 
 .col-15 {
   width: 15%;
-  height: 100px;
 }
 
 .col-70 {
   width: 70%;
-  height: 100px;
 }
 
 .col-100 {
