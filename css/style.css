@@ -215,6 +215,13 @@ row{
   gap: 20px;
 }
 
+.col-50 {
+  margin-left: 20px;
+  width: calc(100% / 6 - 20px);
+  margin-bottom: 45px;
+  gap: 20px;
+}
+
 /*.overlay {
   width: 100%;
   height: 100%;
@@ -232,7 +239,8 @@ row{
   opacity: 1;
 }
 
-.col-16 img {
+.col-16 img,
+.col-50 img {
   width: 100%;
   height: 205px;
   margin-bottom: 10px;
@@ -392,6 +400,7 @@ span {
 .icons-player {
   color: white;
   display: flex;
+  gap: 10px;
 }
 
 .player-bar-sm {
@@ -408,4 +417,12 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/*RESPONSIVE*/
+@media screen and (max-width: 768px) {
+  .col-tablet-25 {
+    width: calc(100% / 2);
+  }
 }
