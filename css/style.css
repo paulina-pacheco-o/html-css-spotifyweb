@@ -146,6 +146,7 @@ body {
   margin-bottom: 10px;
   background-color: black;
   color: white;
+  object-fit: cover;
 }
 
 /*FINE HOVER*/
@@ -461,6 +462,56 @@ span {
   justify-content: center;
   align-items: center;
 }
+
+.elapsed-time {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: silver;
+  height: 100%;
+  width: 25%;
+  border-radius: 5px;
+}
+
+.elapsed-time-sm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: silver;
+  height: 100%;
+  width: 25%;
+  border-radius: 5px;
+}
+
+.controller-point {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: none;
+  width: 15px;
+  height: 15px;
+  background-color: silver;
+  border-radius: 50%;
+  border: 1px solid black;
+  transform: translateY(-50%);
+}
+
+.player:hover .elapsed-time {
+  background-color: green;
+}
+
+.player-bar-sm:hover .elapsed-time-sm {
+  background-color: green;
+}
+
+.player:hover .controller-point {
+  display: block;
+}
+
+.player-bar-sm:hover .controller-point {
+  display: block;
+}
+
 
 
 /*RESPONSIVE*/
