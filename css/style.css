@@ -6,7 +6,6 @@
 
 /*LAYOUT*/
 header {
-  height: 80px;
   background-color: rgba(0, 0, 0, 0.959);
   display: flex;
   justify-content: flex-end;
@@ -110,9 +109,56 @@ body {
   margin-top: 20px;
 }
 
+/*HOVER*/
 .playlist li:hover,
-.before li:hover {
+.before li:hover,
+.download-app:hover,
+.voci li:hover,
+.heart:hover,
+.folder:hover {
   color: white;
+}
+
+.btn:hover {
+  font-size: 20px;
+  width: 280px;
+}
+
+.circle-play:hover {
+  font-size: 35px;
+}
+
+.front {
+  display: block;
+}
+
+.front-img {
+  display: none;
+}
+
+/*.front-img:hover {
+  display: none;
+}*/
+
+.front-img:hover {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+}
+
+/*FINE HOVER*/
+
+.play {
+  width: 40px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus {
+  font-size: 25px;
 }
 
 .playlist ul {
@@ -242,13 +288,11 @@ row{
 .col-16 img,
 .col-50 img {
   width: 100%;
-  height: 205px;
   margin-bottom: 10px;
 }
 
 .col-20 img {
   width: 85%;
-  height: 210px;
   margin-bottom: 10px;
   border-radius: 90%;
 }
@@ -317,7 +361,7 @@ span {
 }
 
 .col-15 {
-  width: 15%;
+  width: 20%;
 }
 
 .col-70 {
@@ -352,8 +396,7 @@ span {
 }
 
 .icons-footer {
-  display: flex;
-  color: white;
+  color: grey;
   gap: 5px;
 }
 
@@ -400,7 +443,7 @@ span {
 .icons-player {
   color: white;
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 .player-bar-sm {
@@ -422,7 +465,7 @@ span {
 
 /*RESPONSIVE*/
 @media screen and (max-width: 768px) {
-  .col-tablet-25 {
-    width: calc(100% / 2);
+  .col-16 {
+    width: calc(100% / 4 - 10px)
   }
 }
